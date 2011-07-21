@@ -1,10 +1,13 @@
-/* QSController */
-
-
-#import <Cocoa/Cocoa.h>
 #import <QSInterface/QSInterfaceController.h>
-@class QSMenuButton;
-@interface QSMenuInterfaceController : QSInterfaceController{
 
-  }
+@class QSMenuButton;
+
+@interface QSMenuInterfaceController : QSInterfaceController
+
+- (id)init;
+- (void)windowDidLoad;
+- (void)updateViewLocations;
+- (NSSize)maxIconSize;
+- (NSRect)window:(NSWindow *)window willPositionSheet:(NSWindow *)sheet usingRect:(NSRect)rect;
+
 @end

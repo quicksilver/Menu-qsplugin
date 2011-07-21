@@ -10,3 +10,4 @@
 
 
 #define kQSMenuInterfaceType @"QSMenuInterfaceType"
+#define kMenuBarHeight 22.0f
