@@ -45,11 +45,11 @@
 		7F7F26BD0821B36D002EC78F /* en */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7F7F26BF0821B372002EC78F /* MenuInterface.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = MenuInterface.nib; sourceTree = "<group>"; };
 		8D1AC9730486D14A00FE50C9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		8D1AC9740486D14A00FE50C9 /* Menu Interface.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Menu Interface.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9AFE06013A1B9CE00790254 /* QSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QSCore.framework; path = ../../../../../Applications/Quicksilver.app/Contents/Frameworks/QSCore.framework; sourceTree = "<group>"; };
-		C9AFE06113A1B9CE00790254 /* QSEffects.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QSEffects.framework; path = ../../../../../Applications/Quicksilver.app/Contents/Frameworks/QSEffects.framework; sourceTree = "<group>"; };
-		C9AFE06213A1B9CE00790254 /* QSFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QSFoundation.framework; path = ../../../../../Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework; sourceTree = "<group>"; };
-		C9AFE06313A1B9CE00790254 /* QSInterface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QSInterface.framework; path = ../../../../../Applications/Quicksilver.app/Contents/Frameworks/QSInterface.framework; sourceTree = "<group>"; };
+		8D1AC9740486D14A00FE50C9 /* Menu Interface.qsplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Menu Interface.qsplugin"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9AFE06013A1B9CE00790254 /* QSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QSCore.framework; sourceTree = QSFrameworks; };
+		C9AFE06113A1B9CE00790254 /* QSEffects.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QSEffects.framework; sourceTree = QSFrameworks; };
+		C9AFE06213A1B9CE00790254 /* QSFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QSFoundation.framework; sourceTree = QSFrameworks; };
+		C9AFE06313A1B9CE00790254 /* QSInterface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QSInterface.framework; sourceTree = QSFrameworks; };
 		C9AFE06813A1BA1B00790254 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = SYSTEM_DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
@@ -98,7 +98,7 @@
 		1ED78706FE9D4A0611CA0C5A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D1AC9740486D14A00FE50C9 /* Menu Interface.bundle */,
+				8D1AC9740486D14A00FE50C9 /* Menu Interface.qsplugin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,7 +144,7 @@
 			name = "Menu Interface";
 			productInstallPath = "$(HOME)/Developer/Palettes";
 			productName = QSMenuInterface;
-			productReference = 8D1AC9740486D14A00FE50C9 /* Menu Interface.bundle */;
+			productReference = 8D1AC9740486D14A00FE50C9 /* Menu Interface.qsplugin */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
