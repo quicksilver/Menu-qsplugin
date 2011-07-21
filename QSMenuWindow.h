@@ -1,13 +1,19 @@
-
-
-#import <AppKit/AppKit.h>
 #import "QSFakeMenuWindow.h"
 
-
-@interface QSMenuWindow : NSPanel {
-    bool hidden;
-    QSFakeMenuWindow *fakeMenuWindow;
+@interface QSMenuWindow : NSPanel
+{
+  bool hidden;
+  QSFakeMenuWindow *fakeMenuWindow;
 }
+
+- (BOOL)canBecomeKeyWindow;
+- (BOOL)canBecomeMainWindow;
+- (NSTimeInterval)animationResizeTime:(NSRect)newFrame;
+- (id)initWithContentRect:(NSRect)contentRect styleMask:(unsigned int)aStyle backing:(NSBackingStoreType)bufferingType defer:(BOOL)flag;
+- (void)orderOut:(id)sender;
+- (void)makeKeyAndOrderFront:(id)sender;
+- (void)orderFront:(id)sender;
 - (void)orderFront:(id)sender makeKey:(BOOL)becomeKey;
-//- (NSImage *) menuBarImage;
+- (void)keyDown:(NSEvent *)theEvent;
+
 @end

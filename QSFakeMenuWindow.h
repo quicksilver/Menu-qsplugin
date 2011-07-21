@@ -1,15 +1,10 @@
+NSRect menuRect();
 
+@interface QSFakeMenuWindow : NSWindow
 
-#import <AppKit/AppKit.h>
+- (id)init;
+- (void)mimic;
+- (NSTimeInterval)animationResizeTime:(NSRect)newFrame;
+- (NSImage *)menuBarImage;
 
-
-@interface QSFakeMenuWindow : NSWindow {
-
-    unsigned char *_screenBytes;
-}
-
-- (void) mimic;
-
--(NSImage *)menuBarImage;
-//- (NSRect) menuRect;
 @end
