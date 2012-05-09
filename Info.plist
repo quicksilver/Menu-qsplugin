@@ -12,10 +12,14 @@
 	<string>6.0</string>
 	<key>CFBundleName</key>
 	<string>Menu Interface</string>
+	<key>CFBundleDisplayName</key>
+	<string>Menu Interface</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleVersion</key>
-	<string>B3</string>
+	<string>B4</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0.0</string>
 	<key>NSHumanReadableCopyright</key>
