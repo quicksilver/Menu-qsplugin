@@ -51,6 +51,14 @@
 		C9AFE06213A1B9CE00790254 /* QSFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QSFoundation.framework; sourceTree = QSFrameworks; };
 		C9AFE06313A1B9CE00790254 /* QSInterface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QSInterface.framework; sourceTree = QSFrameworks; };
 		C9AFE06813A1BA1B00790254 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = SYSTEM_DEVELOPER_DIR; };
+		CD27D3D4155B139800715FEC /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
+		CD27D3D5155B139800715FEC /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		CD27D3D6155B139800715FEC /* Developer.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Developer.xcconfig; sourceTree = "<group>"; };
+		CD27D3D7155B139800715FEC /* QSPlugIn.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = QSPlugIn.xcconfig; sourceTree = "<group>"; };
+		CD27D3D8155B139800715FEC /* QSPlugIn_Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = QSPlugIn_Debug.xcconfig; sourceTree = "<group>"; };
+		CD27D3D9155B139800715FEC /* QSPlugIn_Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = QSPlugIn_Release.xcconfig; sourceTree = "<group>"; };
+		CD27D3DA155B139800715FEC /* Quicksilver.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Quicksilver.pch; sourceTree = "<group>"; };
+		CD27D3DB155B139800715FEC /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +80,7 @@
 		0259C574FE90428111CA0C5A /* QSMenuInterface */ = {
 			isa = PBXGroup;
 			children = (
+				CD27D3D3155B139800715FEC /* Configuration */,
 				32DBCF9E0370C38000C91783 /* Classes */,
 				32DBCF9F0370C38200C91783 /* Other Sources */,
 				0259C582FE90428111CA0C5A /* Resources */,
@@ -124,6 +133,21 @@
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
+		};
+		CD27D3D3155B139800715FEC /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				CD27D3D4155B139800715FEC /* Common.xcconfig */,
+				CD27D3D5155B139800715FEC /* Debug.xcconfig */,
+				CD27D3D6155B139800715FEC /* Developer.xcconfig */,
+				CD27D3D7155B139800715FEC /* QSPlugIn.xcconfig */,
+				CD27D3D8155B139800715FEC /* QSPlugIn_Debug.xcconfig */,
+				CD27D3D9155B139800715FEC /* QSPlugIn_Release.xcconfig */,
+				CD27D3DA155B139800715FEC /* Quicksilver.pch */,
+				CD27D3DB155B139800715FEC /* Release.xcconfig */,
+			);
+			path = Configuration;
+			sourceTree = QS_SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -211,6 +235,7 @@
 /* Begin XCBuildConfiguration section */
 		7FFF2474085E488500266176 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD27D3D8155B139800715FEC /* QSPlugIn_Debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -227,6 +252,7 @@
 		};
 		7FFF2475085E488500266176 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD27D3D9155B139800715FEC /* QSPlugIn_Release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -243,6 +269,7 @@
 		};
 		7FFF2478085E488500266176 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD27D3D5155B139800715FEC /* Debug.xcconfig */;
 			buildSettings = {
 				GCC_PREFIX_HEADER = QSMenuInterface_Prefix.pch;
 				WRAPPER_EXTENSION = qsplugin;
@@ -251,6 +278,7 @@
 		};
 		7FFF2479085E488500266176 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD27D3DB155B139800715FEC /* Release.xcconfig */;
 			buildSettings = {
 				GCC_PREFIX_HEADER = QSMenuInterface_Prefix.pch;
 				WRAPPER_EXTENSION = qsplugin;
