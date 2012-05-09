@@ -1,3 +1,6 @@
+#define kQSMenuInterfaceType @"QSMenuInterfaceType"
+#define kMenuBarHeight 22.0f
+
 NSRect menuRect();
 
 @interface QSFakeMenuWindow : NSWindow
