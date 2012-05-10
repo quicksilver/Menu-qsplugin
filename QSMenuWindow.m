@@ -27,14 +27,13 @@
   [self setLevel:25];
   hidden = YES;
   fakeMenuWindow = [[QSFakeMenuWindow alloc] init];
-  return result;
+  return (QSMenuWindow *)result;
 }
 
 - (void)orderOut:(id)sender
 {
   if ([self isVisible])
   {
-    if([[NSUserDefaults standardUserDefaults] boolForKey:kUseEffects]) [self setFrame:NSOffsetRect([self frame], 0, kMenuBarHeight) alphaValue:0.0 display:NO animate:YES];
     [super orderOut:sender];
   }
 }
@@ -53,23 +52,17 @@
 {
   if (![self isVisible])
   {
-    if([[NSUserDefaults standardUserDefaults] boolForKey:kUseEffects])
-    {
-      [fakeMenuWindow mimic];
-      [fakeMenuWindow setAlphaValue:1.0];
-    }
     NSRect menuScreenRect = [[[NSScreen screens] objectAtIndex:0] frame];
     [self setFrame:NSMakeRect(0, 0, NSWidth(menuScreenRect), NSHeight([self frame])) display:YES animate:NO];
     [self setFrameTopLeftPoint:NSMakePoint(NSMinX(menuScreenRect), NSMaxY(menuScreenRect))];
-    if (becomeKey) [super makeKeyAndOrderFront:sender];
-    else [super orderFront:sender];
-    [self setAlphaValue:1.0];
-    if([[NSUserDefaults standardUserDefaults]boolForKey:kUseEffects])
-    {
-      [fakeMenuWindow setFrame:NSOffsetRect(menuRect(),0,kMenuBarHeight) alphaValue:0.2 display:YES animate:YES];
-      [fakeMenuWindow orderOut:sender];
+      if (becomeKey) {
+          [super makeKeyAndOrderFront:sender];
+      }
+      else {
+          [super orderFront:sender];
+      }
+      [self setAlphaValue:1.0];
     }
-  }
 }
 
 - (void)keyDown:(NSEvent *)theEvent

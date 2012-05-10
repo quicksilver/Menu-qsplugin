@@ -25,7 +25,7 @@ NSRect menuRect()
   [content setImageScaling:NSScaleNone];
   [self setContentView:content];
   
-  return result;
+  return (QSFakeMenuWindow *)result;
 }
 
 - (void)mimic

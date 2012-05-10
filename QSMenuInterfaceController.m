@@ -20,30 +20,20 @@
 	[[[self window] contentView] setDepth:1.5];
 	[[self menuButton] setDrawBackground:YES];
 	
-  [[dSelector cell] setBezeled:YES];
-  [[aSelector cell] setBezeled:YES];
-  [[iSelector cell] setBezeled:YES];
-  [[dSelector cell] setShowDetails:NO];
-  [[aSelector cell] setShowDetails:NO];
-  [[iSelector cell] setShowDetails:NO];
-  [[dSelector cell] setTextColor:[NSColor blackColor]];
-  [[aSelector cell] setTextColor:[NSColor blackColor]];
-  [[iSelector cell] setTextColor:[NSColor blackColor]];
-  [[dSelector cell] setNameFont:[NSFont systemFontOfSize:11.0f]];
-  [[aSelector cell] setNameFont:[NSFont systemFontOfSize:11.0f]];
-  [[iSelector cell] setNameFont:[NSFont systemFontOfSize:11.0f]];
-  [dSelector setTextCellFont:[NSFont systemFontOfSize:11.0f]];
-  [aSelector setTextCellFont:[NSFont systemFontOfSize:11.0f]];
-  [iSelector setTextCellFont:[NSFont systemFontOfSize:11.0f]];
-    
-  [dSelector setPreferredEdge:NSMinYEdge];
-  [aSelector setPreferredEdge:NSMinYEdge];
-  [iSelector setPreferredEdge:NSMinYEdge];
-	
-  [dSelector setResultsPadding:1];
-  [aSelector setResultsPadding:1];
-  [iSelector setResultsPadding:1];
-  
+    NSArray *selectors = [NSArray arrayWithObjects:dSelector,aSelector,iSelector,nil];
+    for (QSSearchObjectView *individualSelector in selectors) {
+        [[individualSelector cell] setBezeled:YES];
+        [[individualSelector cell] setShowDetails:NO];
+        [[individualSelector cell] setTextColor:[NSColor blackColor]];
+        [[individualSelector cell] setNameFont:[NSFont systemFontOfSize:11.0f]];
+        [individualSelector setTextCellFont:[NSFont systemFontOfSize:11.0f]];
+        [individualSelector setPreferredEdge:NSMinYEdge];
+        [individualSelector setResultsPadding:1];
+ 
+    }
+
+
+
   [self updateViewLocations];
 }
 
