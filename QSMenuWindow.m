@@ -1,5 +1,4 @@
 #import "QSMenuWindow.h"
-#import <QSFoundation/QSFoundation.h>
 
 @implementation QSMenuWindow
 
@@ -18,7 +17,7 @@
   return 0.1;
 }
 
-- (id)initWithContentRect:(NSRect)contentRect styleMask:(unsigned int)aStyle backing:(NSBackingStoreType)bufferingType defer:(BOOL)flag
+- (id)initWithContentRect:(NSRect)contentRect styleMask:(NSUInteger)aStyle backing:(NSBackingStoreType)bufferingType defer:(BOOL)flag
 {
   NSWindow *result = [super initWithContentRect:contentRect styleMask:NSNonactivatingPanelMask|NSBorderlessWindowMask backing:bufferingType defer:NO];
   [self setBackgroundColor:[NSColor clearColor]];
