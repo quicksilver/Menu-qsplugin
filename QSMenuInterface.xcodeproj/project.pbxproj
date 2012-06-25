@@ -140,8 +140,9 @@
 				CD27D3DA155B139800715FEC /* Quicksilver.pch */,
 				CD27D3DB155B139800715FEC /* Release.xcconfig */,
 			);
-			path = Configuration;
-			sourceTree = QS_SOURCE_ROOT;
+			name = Configuration;
+			path = /private/tmp/QS/Configuration;
+			sourceTree = "<absolute>";
 		};
 /* End PBXGroup section */
 
@@ -229,7 +230,7 @@
 /* Begin XCBuildConfiguration section */
 		7FFF2474085E488500266176 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD27D3D8155B139800715FEC /* QSPlugIn_Debug.xcconfig */;
+			baseConfigurationReference = CD27D3D7155B139800715FEC /* QSPlugIn.xcconfig */;
 			buildSettings = {
 				OTHER_LDFLAGS = "-bundle";
 				PRODUCT_NAME = "Menu Interface";
@@ -238,7 +239,7 @@
 		};
 		7FFF2475085E488500266176 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD27D3D9155B139800715FEC /* QSPlugIn_Release.xcconfig */;
+			baseConfigurationReference = CD27D3D7155B139800715FEC /* QSPlugIn.xcconfig */;
 			buildSettings = {
 				OTHER_LDFLAGS = "-bundle";
 				PRODUCT_NAME = "Menu Interface";
