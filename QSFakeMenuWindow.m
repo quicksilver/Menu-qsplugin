@@ -3,7 +3,7 @@
 NSRect menuRect()
 {
   NSRect menuRect = [[[NSScreen screens] objectAtIndex:0] frame];
-  float yOffset = NSHeight(menuRect) - kMenuBarHeight;
+  CGFloat yOffset = NSHeight(menuRect) - kMenuBarHeight;
   menuRect.size.height = kMenuBarHeight;
   menuRect = NSOffsetRect(menuRect ,0 ,yOffset);
   return menuRect;

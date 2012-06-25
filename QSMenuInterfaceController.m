@@ -2,7 +2,6 @@
 #import <Carbon/Carbon.h>
 #import <IOKit/IOCFBundle.h>
 #import <ApplicationServices/ApplicationServices.h>
-#import <QSInterface/QSSearchObjectView.h>
 
 @implementation QSMenuInterfaceController
 
@@ -44,9 +43,9 @@
   NSRect dFrame = [dSelector frame];
   NSRect aFrame = [aSelector frame];
   NSRect iFrame = [iSelector frame];
-  dFrame.size.width = MIN(256, (int)[[dSelector cell] cellSize].width);
-  aFrame.size.width = MIN(256, (int)[[aSelector cell] cellSize].width);
-  iFrame.size.width = MIN(256, (int)[[iSelector cell] cellSize].width);
+  dFrame.size.width = MIN(256, (NSInteger)[[dSelector cell] cellSize].width);
+  aFrame.size.width = MIN(256, (NSInteger)[[aSelector cell] cellSize].width);
+  iFrame.size.width = MIN(256, (NSInteger)[[iSelector cell] cellSize].width);
   aFrame.origin.x = NSMaxX(dFrame) + 4;
   iFrame.origin.x = NSMaxX(aFrame) + 4;
   [dSelector setFrame:dFrame];

@@ -1,4 +1,3 @@
-#import <QSInterface/QSInterfaceController.h>
 
 @class QSMenuButton;
 
