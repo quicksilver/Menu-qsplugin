@@ -9,7 +9,7 @@
 - (BOOL)canBecomeKeyWindow;
 - (BOOL)canBecomeMainWindow;
 - (NSTimeInterval)animationResizeTime:(NSRect)newFrame;
-- (id)initWithContentRect:(NSRect)contentRect styleMask:(unsigned int)aStyle backing:(NSBackingStoreType)bufferingType defer:(BOOL)flag;
+- (id)initWithContentRect:(NSRect)contentRect styleMask:(NSUInteger)aStyle backing:(NSBackingStoreType)bufferingType defer:(BOOL)flag;
 - (void)orderOut:(id)sender;
 - (void)makeKeyAndOrderFront:(id)sender;
 - (void)orderFront:(id)sender;
