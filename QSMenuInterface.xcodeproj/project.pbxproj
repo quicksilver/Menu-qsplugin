@@ -10,7 +10,6 @@
 		7F7F26B90821B363002EC78F /* QSFakeMenuWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F7F26B30821B363002EC78F /* QSFakeMenuWindow.m */; };
 		7F7F26BA0821B363002EC78F /* QSMenuInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F7F26B60821B363002EC78F /* QSMenuInterfaceController.m */; };
 		7F7F26BB0821B363002EC78F /* QSMenuWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F7F26B80821B363002EC78F /* QSMenuWindow.m */; };
-		7F7F26BE0821B36D002EC78F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F7F26BC0821B36D002EC78F /* Localizable.strings */; };
 		7F7F26C00821B372002EC78F /* MenuInterface.nib in Resources */ = {isa = PBXBuildFile; fileRef = 7F7F26BF0821B372002EC78F /* MenuInterface.nib */; };
 		CD197EAB155B162A005CE3B6 /* QSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD197EA7155B162A005CE3B6 /* QSCore.framework */; };
 		CD197EAC155B162A005CE3B6 /* QSEffects.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD197EA8155B162A005CE3B6 /* QSEffects.framework */; };
@@ -38,7 +37,6 @@
 		7F7F26B60821B363002EC78F /* QSMenuInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = QSMenuInterfaceController.m; sourceTree = "<group>"; };
 		7F7F26B70821B363002EC78F /* QSMenuWindow.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = QSMenuWindow.h; sourceTree = "<group>"; };
 		7F7F26B80821B363002EC78F /* QSMenuWindow.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = QSMenuWindow.m; sourceTree = "<group>"; };
-		7F7F26BD0821B36D002EC78F /* en */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7F7F26BF0821B372002EC78F /* MenuInterface.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = MenuInterface.nib; sourceTree = "<group>"; };
 		8D1AC9730486D14A00FE50C9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1AC9740486D14A00FE50C9 /* Menu Interface.qsplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Menu Interface.qsplugin"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,7 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				7F7F26BF0821B372002EC78F /* MenuInterface.nib */,
-				7F7F26BC0821B36D002EC78F /* Localizable.strings */,
 				8D1AC9730486D14A00FE50C9 /* Info.plist */,
 			);
 			name = Resources;
@@ -171,6 +168,13 @@
 /* Begin PBXProject section */
 		0259C573FE90428111CA0C5A /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				TargetAttributes = {
+					8D1AC9600486D14A00FE50C9 = {
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
 			buildConfigurationList = 7FFF2477085E488500266176 /* Build configuration list for PBXProject "QSMenuInterface" */;
 			compatibilityVersion = "Xcode 2.4";
 			developmentRegion = English;
@@ -196,7 +200,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F7F26BE0821B36D002EC78F /* Localizable.strings in Resources */,
 				7F7F26C00821B372002EC78F /* MenuInterface.nib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,17 +218,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		7F7F26BC0821B36D002EC78F /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7F7F26BD0821B36D002EC78F /* en */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		7FFF2474085E488500266176 /* Debug */ = {
